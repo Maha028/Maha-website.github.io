@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>MAHA</title>
+</head>
+<body>
+    <header>
+        <a href="#main" class="logo">MAHA</a>
+        <nav class="navigation">
+            <a href="#Cont">Content</a>
+            <a href="#Project">Projects</a>
+            <a href="#Contact">Contact</a>
+
+        </nav>
+    </header>
+
+
+    <section class="main" id="main">
+        <div>
+            <h2>Hello, I'm Maha<br><span>CyberSecurity Student</span></h2>
+            <h3>Writer and Photographer</h3>
+            <a href="sa.html" class="main-btn"> استمتع بقراءةِ قصتي الأولى</a>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/maha-al-zboon-589373240/"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://twitter.com/MahaAli028"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Maha028"><i class="fa-brands fa-github"></i></a>
+                <a href="https://discord.gg/faRrKZTX"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cards" id="Cont">
+        <h2 class="title">Content</h2>
+        <div class="content">
+            <div class="card" onclick="location.href='writing1.html'">
+                <div class="icon">
+                    <i class="fa-solid fa-feather-pointed"></i>
+                </div>
+                <div class="info">
+                    <h3>Writing</h3>
+                    <p>كُل ما كُتب بفائض المشاعِر وطرفِ القلم </p>
+                </div>
+            </div>
+
+            <div class="card" onclick="location.href='photo.html'">
+                <div class="icon">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="info">
+                    <h3>Photo</h3>
+                    <p>لِكُلِّ صورةٍ قِصةٌ وَلَحظة </p>
+                </div>
+            </div>
+            <div  class="card" onclick="location.href='#Project'">
+                
+                <div class="icon">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <div class="info">
+                    <h3>Projects</h3>
+                    <p>Here you can see all my projects in technology world</p>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <section class="project" id="Project">
+        <h2 class="title">Projects</h2>
+        <dev class="content">
+            <div class="proj-card">
+                <div class="proj-img">
+                    <img src="images/youtube-clone.png">
+                </div>
+                <div class="proj-info">
+                    <p class="proj-categ"> Front-End</p>
+                    <strong class="proj-title">
+                        <span>youtube-clone</span>
+                        <a href="youtube/index.html" class="more-det">More details</a>
+                    </strong>
+
+                </div>
+            </div>
+        </dev>
+    </section>
+
+    <section class="cards " id="Contact">
+        <h2 class="title">Lets talk togather</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Gmail</h3>
+                    <p onclick="copy(this)">zboon.maha12@gmail.com</p>
+                </div>
+            </div>
+            <div class="card" >
+                <div class="icon">
+                    <i class="fa-brands fa-yahoo"></i>
+                </div>
+                <div class="info" >
+                    <h3>Yahoo</h3>
+                    <p onclick="copy(this)" >zboon.maha@yahoo.com </p>
+                    
+                </div>
+            </div>
+            <div  class="card">
+            
+               <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+                <div class="info">
+                    <h3>Instagram</h3>
+                    <p onclick="copy(this)">m.a.h.a8</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="foot-title">Copyrights @ <span>MahaAli</span></p>
+        <div class="social-icon">
+            <a href="https://www.linkedin.com/in/maha-al-zboon-589373240/"><i class="fa-brands fa-linkedin"></i></i></a>
+            <a href="https://twitter.com/MahaAli028"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://github.com/Maha028"><i class="fa-brands fa-github"></i></a>
+            <a href="https://discord.gg/faRrKZTX"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+
+        function copy(that) 
+        {
+            var inp =document.createElement('input');
+            document.body.appendChild(inp)
+            inp.value =that.textContent
+            inp.select();
+            document.execCommand('copy',false);
+            inp.remove();
+            swal("Copied the text: " + inp.value)
+
+        }
+    </script>
+</body>
+</html>

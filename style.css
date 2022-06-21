@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*البوردر من ضمن البوكس ما بطلع*/
+    scroll-behavior: smooth;
+}
+header{
+    
+    background: url(images/head.png) no-repeat ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: fixed;/*عشان الهيدر ما يختفي لما اعمل سكرول*/
+    z-index: 999;/*عشان ما اشي يغطي ع الهيدر ابداً*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+
+}
+.logo{
+    font-display:flex;
+    text-decoration: none;
+    color:rgba(36, 35, 35, 0.485);
+    font-style:oblique;
+    text-transform: uppercase;
+    font-weight:900 ;
+    font-size: 2.2em;
+    font-family:'Courier New', Courier, monospace;
+}
+.navigation a{
+    color:rgb(50, 50, 50);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+section{
+    padding: 100px 200px;
+
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/pinheader.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color:rgba(36, 35, 35, 0.485) ;
+    font-size:1.4em ;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main h2 span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    color: #B96A77;
+    font-size: 2em;
+    font-weight: 600;
+}
+.main h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgba(36, 35, 35, 0.485) ;
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom:10px ;
+}
+.main-btn{
+    color:lavenderblush ;
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgba(36, 35, 35, 0.485) ;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.7em 0.7em;
+    letter-spacing: -2px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover{
+    background-color:rgba(36, 35, 35, 0.70) ;
+    transform: scale(1.07);
+
+}
+.social-icon a{
+    padding: 10px;
+    color: azure;
+    font-size: 1.7em;
+    padding-right: 15px;
+}
+
+.title{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    display: flex;
+    justify-content: center;
+    color:#B96A77;    ;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color:#ebd4da ;
+    width:17em ;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 30%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    cursor: pointer
+}
+.card:hover{
+    background-color:rgba(2, 1, 1, 0.20) ;
+    transform: scale(1.07);
+    
+}
+
+.icon {
+    color:#B96A79 ;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+.info h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.project{
+    background-color: #ebd4da;
+}
+
+.project .content{
+    margin-top: 30px;
+    
+}
+.project .ph{
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+.project .ph .proj-card{
+    width: 15em;
+    margin: 10px;
+    
+}
+.ph .proj-img img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.proj-card{
+    background-color:#fff ;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 30%);
+    min-height: 14px;
+    width: 21em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.7s ease;
+}
+.proj-card:hover{
+    transform: scale(1.1);
+}
+.proj-img img{
+    width: 100%;
+}
+.proj-card:hover .proj-img{
+    opacity: 0.85;
+}
+.proj-info{
+    padding: 1em;
+}
+.proj-categ{
+    font-size: 0.6em;
+    color: rgb(20, 19, 19);
+}
+.proj-title{
+    display: flex;
+    justify-content:space-between ;
+    font-weight: 800;
+    margin: 10px;
+}
+.proj-title span{
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.more-det{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #B96A77;
+    margin-top: 19px;
+    margin-left: 13px;
+}
+.more-det:hover{
+    color: rgba(36, 35, 35, 0.485);
+}
+.contact{
+    background-color: #fff;
+    width: 100%;
+    align-items: center;
+
+}
+.contact .icon{
+    font-size: 4em;
+}
+.footer{
+    background: url(images/head.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.foot-title{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+ .foot-title span{
+    font-family:sans-serif;
+    color: #B96A79;
+ }
+
+ .footer .social-icon a{
+    font-size: 1.8em;
+    padding: 0 12px 0 0;
+    color: #B96A77;
+ }
+ .w{
+
+    justify-content: center;
+ }
+.wr{
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+}
+.wr p span{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    color: #B96A77;
+    font-size: 2em;
+    font-weight: 600;
+    
+}
+.sa p {
+    font-size: 0.9em;
+    text-align: right;
+
+}
+.m{
+    width: 100%;
+    min-height: 100vh;
+    text-align: right;
+    align-items: center;
+    background: url(images/pinheader.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.m a{
+    text-decoration: none;
+    padding: 10px;
+    color:black;
+    font-size:3em;
+
+}
+#modalContainer {
+    background-color:rgba(0, 0, 0, 0.3);
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:10000;
+    background-image:url(tp.png); /* required by MSIE to prevent actions on lower z-index elements */
+}
+
+#alertBox {
+    position:relative;
+    width:300px;
+    min-height:100px;
+    margin-top:50px;
+    border:1px solid #666;
+    background-color:#fff;
+    background-repeat:no-repeat;
+    background-position:20px 30px;
+}
+.m span{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin-top: 10px;
+    color: #B96A77;
+    font-size: 3em;
+    font-weight: 600;
+}
+.ph-head{
+    width: 100%;
+    height: 15px;
+}
+div .navigation{
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    padding: 10px 50px;
+}
+.project a{
+    text-decoration: none;
+    color: rgb(50, 50, 50);
+    width: 100%;
+    text-align: center;
+    padding: 10px 50px;
+}
+ @media (max-width:1023px){
+    header{
+        padding: 4px 4px;
+    }
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+
+ @media(max-width:640px){
+    body{
+        font-size: 12px;
+    }
+    .main-content h2{
+        font-size: 0.8em;
+    }
+    .main-content h3{
+        font-size: 1.4em;
+    }
+ }
+
+ @media (max-width:300px){
+    body{
+        font-size: 10px;
+
+    }
+ }
